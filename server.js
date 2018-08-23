@@ -19,7 +19,7 @@ app.use(function(req, res, next) {
  * DATABASE *
  ************/
 
-// const db = require('./models');
+const db = require('./models');
 
 /**********
  * ROUTES *
