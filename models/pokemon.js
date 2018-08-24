@@ -6,7 +6,7 @@ const PokemonSchema = new Schema({
     name: String,
     primaryType: String,
     secondaryType: String,
-    shortDescription: String,
+    shortDescription: String, //should include defining characteristics and location
     isLegendary: Boolean
 });
 

@@ -66,7 +66,7 @@ app.get('/api', (req, res) => {
       {method: "GET", path: "/api/profile", description: "Data about me"}, 
       {method: "GET", path: "/api/pokemon", description: "My current pokemon"},
       {method: "GET", path: "/api/pokemon/:id", description: "Shows this pokemon's info"},
-      {method: "POST", path: "/api/pokemon", description: "Create some pokemon for my pokedex!"} 
+      {method: "POST", path: "/api/pokemon", description: "Add some pokemon to my research!"} 
     ]
   })
 });
@@ -85,15 +85,26 @@ app.get('/api/pokemon', (req, res) => {
   })
 });
 
-// // Show one Pokemon
+// // Show one Pokemon by _id
 app.get('/api/pokemon/:id', (req, res) => {
   // get pokemon id from url params (`req.params`)
   let pokeId = req.params.id;
-
   // find pokemon in db by id
   db.Pokemon.findById(pokeId, (err, foundPokemon) => {
     if(err){ return res.status(400).json({err: "error has occured"})} 
     res.json(foundPokemon);
+  });
+});
+
+// Create a pokemon in database
+app.post('/api/pokemon', (req, res) => {
+  // create new pokemon variable with form data (`req.body`)
+  let newPokemon = req.body;
+  console.log(req.body)
+  // create new pokemon in db
+  db.Pokemon.create(newPokemon, (err, savedPokemon) => {
+    if(err){ return res.status(400).json({err: "error has occured"})} 
+    res.json(savedPokemon);
   });
 });
 

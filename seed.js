@@ -9,7 +9,7 @@ var pokemon_list = [
     name: "Bulbasaur",
     primaryType: "Grass",
     secondaryType: " Poison",
-    shortDescription: "One of the first three starter Pokemon (Gen1)",
+    shortDescription: "One of the first three starter Pokemon (Kanto)",
     isLegendary: false
     },
     {
@@ -17,7 +17,7 @@ var pokemon_list = [
     name: "Slowpoke",
     primaryType: "Water",
     secondaryType: " Psychic",
-    shortDescription: "Takes a long time to respond to everything that's not food (Gen1)",
+    shortDescription: "Takes a long time to respond to everything that's not food (Kanto)",
     isLegendary: false
     },
     {
@@ -25,7 +25,7 @@ var pokemon_list = [
     name: "Haunter",
     primaryType: "Ghost",
     secondaryType: " Poison",
-    shortDescription: "Mischevious ghost, paralizes prey with a lick from his tongue (Gen1)",
+    shortDescription: "Mischevious ghost, paralizes prey with a lick from his tongue (Kanto)",
     isLegendary: false
     },
     {
@@ -33,7 +33,7 @@ var pokemon_list = [
     name: "Snorlax",
     primaryType: "Normal",
     secondaryType: "",
-    shortDescription: "Loves food, loves sleep. Good luck trying to move him out of the way (Gen1)",
+    shortDescription: "Loves food, loves sleep. Good luck trying to move him out of the way (Kanto)",
     isLegendary: false
     },
     {
@@ -41,7 +41,7 @@ var pokemon_list = [
     name: "Mew",
     primaryType: "Psychic",
     secondaryType: "",
-    shortDescription: "Known for being able to learn any attack from any Pokemon, very elusive (Gen1)",
+    shortDescription: "Known for being able to learn any attack from any Pokemon, very elusive (???)",
     isLegendary: true
     },
 ]
